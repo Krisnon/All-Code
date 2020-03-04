@@ -1,0 +1,110 @@
+\documentclass[UTF8]{ctexart}
+
+\usepackage{amsmath}
+
+\title{\heiti Matrix}
+\author{\kaishu 闫嘉明} 
+\date{\heiti \today}
+
+\begin{document}
+\maketitle
+%matrix环境---无符号
+%用数学公式标识符括起来
+$
+\begin{matrix}
+    0 & 1 \\
+    1 & 0
+\end{matrix} \qquad
+$
+%pmatrix环境---（）
+\[
+\begin{pmatrix}
+    0 & -i \\
+    i & 0
+\end{pmatrix} \qquad
+\]
+%bmatrix环境---[]
+\[
+\begin{bmatrix}
+    0 & 1 \\
+    1 & 0
+\end{bmatrix} \qquad
+\]
+%Bmatrix环境---{}
+\[
+\begin{Bmatrix}
+    0 & 1 \\
+    1 & 0
+\end{Bmatrix} \qquad
+\]
+%vmatrix环境---||
+\[
+\begin{vmatrix}
+    0 & 1 \\
+    1 & 0
+\end{vmatrix} \qquad
+\]
+%Vmatrix环境---||||
+\[
+\begin{Vmatrix}
+    0 & 1 \\
+    1 & 0
+\end{Vmatrix}
+\]
+%矩阵常用省略号
+$$
+\begin{bmatrix}
+    a_{11} & \dots & a{1n} \\
+    & \ddots & \vdots \\
+    0 & & a_{nn}
+\end{bmatrix}_{n \times n}^n
+$$
+%可以为矩阵内元素以及矩阵本身加下标和上标
+%分块矩阵（即矩阵嵌套）
+$
+\begin{pmatrix}
+    \begin{matrix} 1 & 0\\0 & 1 \end{matrix} & \text{\Large 0}\\
+    \text{\Large 0} & \begin{matrix} 1 & 0\\0 & 1 \end{matrix}
+\end{pmatrix}
+$
+%\text{}用于临时切换至文本模式
+%三角矩阵
+$
+\begin{pmatrix}
+    a_{11} & a_{12} & \cdots & a_{1n}\\
+    & a_{22} & \cdots &a_{2n}\\
+    & & \ddots & \vdots\\
+    \multicolumn{2}{c}{\raisebox{1.3ex}[0pt]{\Huge 0}} & & a_{nn}
+\end{pmatrix}
+$
+%跨列省略号：\hdotsfor{<列数>}
+$
+\begin{vmatrix}
+    1 & \frac 12 & \dots & \frac 1n \\
+    \hdotsfor{4}\\
+    m & \frac m2 & \dots & \frac mn
+\end{vmatrix}
+$
+
+%行内小矩阵（smallmatrix）环境
+复数$z=(x,y)$也可用矩阵
+$
+\left(
+\begin{smallmatrix}
+    x & y \\ y & x
+\end{smallmatrix}
+\right)
+$
+来表示
+
+%array环境（类似于表格环境tabular）
+$
+\begin{array}{r|r|r}
+    1 & 2 & 3\\
+    \hline %用于生成跨所有列的横线
+    4 & 5 & 6\\
+    \hline
+    7 & 8 & 9
+\end{array}
+$
+\end{document}

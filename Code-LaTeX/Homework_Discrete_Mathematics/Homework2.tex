@@ -1,0 +1,54 @@
+\documentclass[UTF8]{ctexart}
+
+\title{\heiti 第二次离散数学作业}
+\author{\kaishu 闫嘉明}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    \section{24}
+    Let C(x) be the propositional function "x" is in your class.
+    \subsection{a}
+    Let M(x) be the propositional function "x" has a mobile phone.\\
+    (1)$\forall x M(x)$\\
+    (2)$\forall x (C(x) \wedge M(x))$
+    \subsection{c}
+    Let S(x) be the propositional function "x" can swim.\\
+    (1)$\exists x \neg S(x)$\\
+    (2)$\exists x (C(x) \wedge \neg S(x))$
+    \section{37}
+    \subsection{a}
+    Let V(x) be the propositional function "x" qualifies as a vip.
+    Let F(x,y) be the propositional function "x" flys more than "y" miles a year.
+    Let N(x,y) be the propositional function "x" flys more than "y" times a year.\\
+    $\forall x((F(x,25000) \vee N(x,25))\rightarrow V(x))$
+    \subsection{b}
+    Let M(x) be the propositional function "x" is male.
+    Let T(x,y) be the propositional function "x" is able to finish a marathon in less than y hours.
+    Let Q(x) be the propositional function "x" is qualified for the marathon.\\
+    $\forall x (((M(x) \wedge T(x,3)) \vee (\neg M(x) \wedge T(x,3.5)))\rightarrow Q(x))$
+    \subsection{c}
+    Let Q(x) be the propositional function "x" is qualified for a master's degree.
+    Let B(x) be the propositional function "x" gets higher than B in every subject.
+    Let S(x,y) be the propositional function "x" gets more than "y" credits.
+    Let P(x) be the propositional function "x" passed the master thesis defense.\\
+    $\forall x ((B(x) \wedge (S(x,60) \vee (S(x,45) \wedge P(x))))\rightarrow Q(x))$
+    \subsection{d}
+    Let V(x) be the propositional function "x" has learned 21 credit course in a term.
+    Let A(x) be the propositional function "x" got A for all course.
+    Let S(x) be the propositional function "x" is a student.\\
+    $\exists x (S(x)\wedge (V(x)\wedge A(x)))$
+    \section{43}
+    They are not equivalent. For example, if P(x) is sometimes true and sometimes false, then $\forall x (P(x)\rightarrow Q(x))$ is false but $\forall x P(x)\rightarrow \forall x Q(x)$ is true.
+    \section{62}
+    \subsection{a}
+    $\forall x (P(x)\rightarrow \neg S(x))$
+    \subsection{b}
+    $\forall x (R(x)\rightarrow S(x))$
+    \subsection{c}
+    $\forall x (Q(x)\rightarrow P(x))$
+    \subsection{d}
+    $\forall x (Q(x)\rightarrow \neg R(x))$
+    \subsection{e}
+    Yes, we can. From (a) and (c), we know that $\forall x (Q(X)\rightarrow \neg S(x))$. But according to (b), $\forall x (R(x)\rightarrow S(x))$. So $\forall x (Q(x)\rightarrow \neg R(x))$.
+\end{document}

@@ -1,0 +1,34 @@
+%导言区
+\documentclass[UTF8]{article}
+
+\usepackage[UTF8]{ctex}
+
+%\documentclass[UTF8]{article} & \usepackage[UTF8]{ctex}
+%\documentclass[UTF8]{ctexart}
+%这两者最终效果相同
+%article, report, book 三者对应 ctexart, ctexep, ctexbook
+
+\newcommand{\degree}{^\circ} %用 "\newcommand{}{}" 定义不存在的命令
+
+\title{\heiti 我的第一份LaTeX文档}
+\author{\kaishu 闫嘉明} %用前缀“\xxxxxx”来定义所使用的字体
+\date{\heiti \today}
+
+%正文区（文稿区）
+\begin{document}
+    \maketitle
+    Hello \LaTeX
+
+    %可以键入一个空行来区分段落，并且不论有几个空行，编译器均认为只有一行
+    Let's input a formula $f(x)=3x^2+6x$. % "$$" 用于标识数学符号
+    And now let it show in a separate line $$f(x)=g(x)$$ And here comes it.
+    % "$$$$" 用于让数学公式单独显示在一行中
+
+    The angle of C is: $$\angle C=90 \degree$$ %“\xxxxx” 命令与文本间要有空格来区分命令和正文
+    勾股定理表述为：
+    \begin{equation}
+        AB^2=BC^2+AC^2
+    \end{equation} 
+    %"\begin{equation} & \end{equation}" 用于表述带尾部序列标志的方程
+    
+\end{document} %有且仅有一个document环境

@@ -1,0 +1,28 @@
+\documentclass[UTF8]{ctexart}
+%ctexart中section默认居中
+%使用article+ctex时section默认左对齐
+
+\title{Section}
+\author{\kaishu 闫嘉明} %用前缀“\xxxxxx”来定义所使用的字体
+\date{\heiti \today}
+
+\begin{document}
+    \maketitle
+    \section{引言}
+    CTEX 宏集是面向中文排版的通用 LATEX 排版框架，为中文 LATEX 文档提供了汉字输出支持、
+标点压缩、字体字号命令、标题文字汉化、中文版式调整、数字日期转换等支持功能，可适应论
+文、报告、书籍、幻灯片等不同类型的中文文档。\\CTEX 宏集支持 LATEX、pdfLATEX、XƎLATEX、LuaLATEX、upLATEX 等多种不同的编译方式，并
+为它们提供了统一的界面。 \par 主要功能由宏包 ctex 和中文文档类 ctexart、ctexrep、ctexbook 和
+ctexbeamer 实现。
+    %\\只能换行，并不形成新的段落
+    %"\par" 为段落生成命令，不过一般用空行
+    \section{实验方法}
+    \section{实验结果}
+    \subsection{数据}
+    \subsection{图表}
+    \subsubsection{实验条件}
+    \subsection{结果分析}
+    \section{结论}
+    \section{致谢}
+    %更多细节设置自行查阅ctex.pdf
+\end{document}

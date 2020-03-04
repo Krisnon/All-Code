@@ -1,0 +1,77 @@
+\documentclass[UTF8]{ctexart}
+
+\title{\heiti Font and Size}
+\author{\kaishu 闫嘉明} 
+\date{\heiti \today}
+
+\begin{document}
+\maketitle
+%%%%%%%%%%%%%%%%    
+%字体族设定（罗马字体、无衬线字体、打字机字体）
+    \textrm{Roman Family}
+    
+    \textsf{Sans Serif Family}
+    
+    \texttt{Typewriter Family}
+    %如上的声明可以定义{}内的文字字体族
+    
+    Font
+
+    \sffamily Sans Serif Family in this line
+    %如上的声明可以定义该声明之后所有文字的字体族
+
+    and all the text behind
+    
+    {\rmfamily Roman Family}%带上{}可以使作用范围局限在{}内
+    
+    {\ttfamily Typewriter family}
+
+    And back to Sans
+    
+    \ttfamily%出现新的命令后会覆盖之前命令的效果
+
+    I'm Typewriter Family.
+    \sffamily
+    
+
+%%%%%%%%%%%%
+%字体系列设置（粗细、宽度）
+    \textmd{Medium Series}  \textbf{Boldface Series}
+    
+    {\mdseries Medium Series}  {\bfseries Boldface series}
+
+    \rmfamily
+%%%%%%%%%%%
+%字体形状（直立、斜体、伪斜体、小型大写）
+    \textup{Upright Shape}  \textit{Italic Shape} 
+
+    \textsl{Slanted Shape}  \textsc{Small Caps Shape}%Slanted shape 不适用于sans字体族
+
+    {\upshape Upright Shape}  {\itshape Italic Shape}  
+    
+    {\slshape Slanted Shape}  {\scshape Small Caps Shape}
+
+
+%%%%%%%%%%%
+%中文字体
+    {\songti 宋体}  {\heiti 黑体}  {\fangsong 仿宋}  {\kaishu 楷书}
+
+    中文字体的\textbf{粗体}与\textit{斜体}
+
+
+%%%%%%%%%%%
+%字体大小
+    {\tiny Hello}
+    {\scriptsize Hello}
+    {\footnotesize Hello}
+    {\small Hello}
+    {\normalsize Hello}
+    {\large Hello}
+    {\Large Hello}
+    {\LARGE Hello}
+    {\huge Hello}
+    {\Huge Hello}
+
+%中文字号设置命令
+\zihao{0} 你好！
+\end{document}
